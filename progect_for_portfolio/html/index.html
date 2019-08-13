@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/progect_for_portfolio/css/style.css">
+  <link rel="stylesheet" href="/progect_for_portfolio/less/main.css">
+</head>
+<body>
+        <header>
+                <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Портфолио</a>
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+              </header>
+  <section class="main_page">
+    <h1 class="main_page__title">frontend разработчик,<br>верстальщик</h1>
+
+  </section>
+  <section>
+    <article class="article article_whitebg article_first">
+        <h2 class="black">Здесь вы можете ознакомиться с моими работами</h2>
+        <section class="portfolio">
+      <div class="container">
+            <div class="potfolio-slider">
+                <div class="portfolio-block">
+                    <div class="portfolio-img"><img src="/progect_for_portfolio/img/dev.png" alt="Скрин верстки "></div>
+                    <h3  class="portfolio-header">Тренировочная верстка </h3>
+                    <p>Адаптивная страница собранная из макета Figma</p>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"><img src="/progect_for_portfolio/img/coming_soon.png" alt="Уже скоро"></div>
+                    <h3 class="portfolio-header">Уже скоро</h3>
+                    <p></p>
+                </div>
+                <div class="portfolio-block">
+                    <div class="portfolio-img"><img src="/progect_for_portfolio/img/coming_soon.png" alt="Уже скоро"></div>
+                    <h3 class="portfolio-header">Уже скоро</h3>
+                    <p></p>
+                </div>
+            </div>
+      </div>
+  </section>
+    </article>
+  </section>
+  
+  <article class="article article_bluebg article_second">
+    <h2 class="white">Свяжись со мной!</h2>
+    <p class="white">Ты по-любому захочешь, чтобы я сделал такую же красоту и тебе. Поэтому я создал форму обратной связи! Пиши, не стесняйся :)</p>
+    <form class="form">
+      <input type="email" class="form_input" placeholder="E-mail">
+      <input type="text" class="form_input" placeholder="Имя">
+      <textarea class="form_textarea" placeholder="Ваше сообщение"></textarea>
+      <button class="form_button" type="button">Отправить</button>
+    </form>
+  </article>
+  <!-- подключаем Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- подключаем слтили карусели -->
+  <link rel="stylesheet" href="/progect_for_portfolio/slick/slick.css">
+  <link rel="stylesheet" href="/progect_for_portfolio/slick/slick-theme.css">  
+  <!-- подключаем саму библиотеку slik -->
+  <script src="/progect_for_portfolio/slick/slick.min.js"></script>
+  <script>
+        $(document).ready(function(){
+    $('.potfolio-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+     
+    });
+    });
+  </script>
+
+
+
+
+</body>
+</html>

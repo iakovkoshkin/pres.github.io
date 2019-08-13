@@ -1,0 +1,24 @@
+.portfolio {
+  background: #9e9e9eb9;
+  border-radius: 7px;
+}
+.portfolio-block {
+  margin: 2rem 2rem;
+  text-align: center;
+}
+.portfolio-block h3 {
+  margin-top: 1.5rem;
+}
+.portfolio-block p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.portfolio-img img {
+  border-radius: 7px;
+  display: block;
+  margin: 0 auto;
+  height: 190px;
+}
+.slick-active {
+  outline: none;
+}
